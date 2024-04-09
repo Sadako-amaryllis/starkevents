@@ -16,18 +16,87 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-y: visible;
+	overflow-x: hidden;
+}
+
+#container {
+	height: 100vh;
+	/* set width based on sections */
+	width: 400%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.horizontal-section {
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.horizontal-section:nth-child(1) {
+	background-image: url("https://images.pexels.com/photos/2249527/pexels-photo-2249527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.horizontal-section:nth-child(2) {
+	background-image: url("https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.horizontal-section:nth-child(3) {
+	background-image: url("https://images.pexels.com/photos/1517076/pexels-photo-1517076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.horizontal-section:nth-child(4) {
+	background-image: url("https://images.pexels.com/photos/1037996/pexels-photo-1037996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.content {
+  flex: 1;
+  padding-right: 20px; 
+  padding-left: 40px; 
+}
+
+.heading {
+	font-family: "Oswald", sans-serif;
+	font-size: 4vw;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 1vw;
+  text-align: center;
+}
+.headingbold {
+	font-family: "Oswald", sans-serif;
+	font-size: 4vw;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1vw;
+  text-align: center;
+}
+
+.horizontal-section p {
+  margin-top: 20px; 
+  font-size: 16px;
+  color: #ffffff; 
+}
+
+.image-column {
+  flex: 1;
 }
