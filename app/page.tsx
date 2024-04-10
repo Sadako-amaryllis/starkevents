@@ -78,8 +78,8 @@ export default function Home() {
             <Image
               src="/img/casque.png"
               alt="Description de l'image"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
             />
           </div>
         </div>
@@ -108,27 +108,63 @@ export default function Home() {
 
       {/* ---------- section 05 ---------- */}
       <section className="horizontal-section">
-      <Image
+        <div className="bottom-image-container">
+          <Image
             src="/img/woman-c.png"
             alt="woman-c.png"
-            width={1100}
-            height={1150}
+            width={1200}
+            height={1100}
+            objectFit="cover"
           />
+        </div>
       </section>
 
       {/* ---------- section 06 ---------- */}
       <section className="horizontal-section">
-        <div>
-          <h1 className="headingbold">Et vous ? </h1>
-          <h1 className="heading">Qu’allez-vous ressentir ?</h1>
+        <div className="content-wrapper">
+          <div className="column">
+            <div className="text-content">
+              <h4 className="heading">Le box immersif</h4>
+              <p>
+                Découvrez l’interprétation en temps réel de vos images mentales
+                sur des écrans géants à 360° ! Un moment de partage et de
+                découverte de soi.
+              </p>
+            </div>
+            <p>
+              Une nouvelle façon de découvrir le nouveau parfum de Lancôme,
+              l’enivrant. Votre image mentale imprimée, saisissez l’occasion de
+              partager votre imagination et vision à votre entourage !
+            </p>
+          </div>
+        </div>
+        <div className="column">
+          <div className="image-content">
+            <Image
+              src="/img/pictures.png"
+              alt="pictures.png"
+              width={300}
+              height={200}
+            />
+          </div>
         </div>
       </section>
 
       {/* ---------- section 07 ---------- */}
       <section className="horizontal-section">
-        <div>
-          <h1 className="headingbold">Et vous ? </h1>
-          <h1 className="heading">Qu’allez-vous ressentir ?</h1>
+        <div className="video-container">
+          <div className="overlay-image">
+            <Image
+              src="/img/flacon_sans_fond_2.png"
+              alt="woman-c.png"
+              width={1100}
+              height={1500}
+            />
+          </div>
+          <video controls>
+            <source src="/video/goutte.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos au format MP4.
+          </video>
         </div>
       </section>
     </main>
