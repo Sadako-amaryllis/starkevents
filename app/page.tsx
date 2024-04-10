@@ -41,9 +41,9 @@ export default function Home() {
           <img src="/sparkevents.svg" alt="SVG2" />
         </div>
         <div className="content">
-          <h1 className="headinglight">L’enivrant</h1>
+          <h1 className="headinglight">L’enivrant,</h1>
           <h1 className="heading">l’expérience</h1>
-          <p>
+          <p style={{ maxWidth: '600px' }}>
             Plongez dans une expérience olfactive révolutionnaire lors d'une
             soirée immersive inoubliable ! Avec la technologie EEG
             (électroencéphalogramme), découvrez le nouveau parfum de Lancôme

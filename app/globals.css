@@ -123,6 +123,7 @@ body {
 	color: black;
 	letter-spacing: 1vw;
 	padding-bottom: 8px;
+	margin-bottom: 0;
 }
 
 .headingh3 {
@@ -160,6 +161,7 @@ body {
 	font-weight: bolder;
 	color: black;
 	letter-spacing: 1vw;
+	margin-bottom: 0;
 }
 
 .horizontal-section p {
