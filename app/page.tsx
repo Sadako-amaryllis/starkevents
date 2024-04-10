@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className="image-column">
           <Image
-            src="/img/cloche.png"
+            src="/img/Cloche.png"
             alt="cloche.png"
             width={500}
             height={450}
