@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
@@ -33,18 +33,17 @@
 body {
 	overflow-y: visible;
 	overflow-x: hidden;
+	background-color: #EFF4F7;
 }
 
 #container {
 	height: 100vh;
-	/* set width based on sections */
-	width: 400%;
+	width: 700%;
 	display: flex;
 	flex-wrap: nowrap;
 }
 
 .horizontal-section {
-	background-color: black;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -55,48 +54,122 @@ body {
 	align-items: center;
 }
 
+/* Header logo */
+.header {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.headerX {
+	margin: 0;
+	padding: 10;
+}
+
+.header img:first-child {
+	width: 125px;
+	height: auto;
+	margin-right: 16px;
+}
+
+.header img:last-child {
+	margin-left: 16px;
+	width: 35px;
+	height: auto;
+}
+
 .horizontal-section:nth-child(1) {
-	background-image: url("https://images.pexels.com/photos/2249527/pexels-photo-2249527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-image: url("/img/Back_0.png");
 }
 .horizontal-section:nth-child(2) {
-	background-image: url("https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-image: url("/img/Back_1.png");
 }
 .horizontal-section:nth-child(3) {
-	background-image: url("https://images.pexels.com/photos/1517076/pexels-photo-1517076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-image: url("/img/Back_2.png");
 }
 .horizontal-section:nth-child(4) {
-	background-image: url("https://images.pexels.com/photos/1037996/pexels-photo-1037996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-image: url("/img/Back_3.png");
+}
+.horizontal-section:nth-child(5) {
+	background-image: url("/img/Back_4.png");
+}
+.horizontal-section:nth-child(6) {
+	background-image: url("/img/Back_5.png");
+}
+.horizontal-section:nth-child(7) {
+	background-image: url("/img/Back_6.png");
 }
 
 .content {
-  flex: 1;
-  padding-right: 20px; 
-  padding-left: 40px; 
+	flex: 1;
+	margin-right: 40px;
+	margin-left: 80px;
 }
 
+/* Titles */
 .heading {
-	font-family: "Oswald", sans-serif;
+	font-family: "rounded mplus 1c", sans-serif;
 	font-size: 4vw;
 	font-weight: 300;
-	color: white;
+	color: black;
 	letter-spacing: 1vw;
-  text-align: center;
+	padding-bottom: 8px;
+	/* text-align: center; */
 }
+
+.headingh3 {
+	font-family: "rounded mplus 1c", sans-serif;
+	font-size: 2vw;
+	font-weight: 300;
+	color: black;
+	letter-spacing: 1vw;
+	text-align: center;
+	max-width: 600px;
+}
+
 .headingbold {
-	font-family: "Oswald", sans-serif;
+	font-family: "rounded mplus 1c", sans-serif;
 	font-size: 4vw;
 	font-weight: bold;
-	color: white;
+	color: black;
 	letter-spacing: 1vw;
-  text-align: center;
+	text-align: center;
+}
+
+.headinglight {
+	font-family: "rounded mplus 1c", sans-serif;
+	font-size: 4vw;
+	font-weight: bolder;
+	color: black;
+	letter-spacing: 1vw;
 }
 
 .horizontal-section p {
-  margin-top: 20px; 
-  font-size: 16px;
-  color: #ffffff; 
+	padding: 10;
+	font-size: 16px;
+	color: black;
 }
 
 .image-column {
-  flex: 1;
+	flex: 1;
+}
+.image-column2 {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+/* Column Image Center*/
+.centered-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.image-container {
+	margin-top: 20px;
 }
