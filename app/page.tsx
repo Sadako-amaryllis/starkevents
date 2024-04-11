@@ -110,7 +110,7 @@ export default function Home() {
       <section className="horizontal-section">
         <div className="bottom-image-container">
           <Image
-            src="/img/woman-c.png"
+            src="/img/femme-c.png"
             alt="woman-c.png"
             width={1200}
             height={1100}
@@ -143,8 +143,8 @@ export default function Home() {
             <Image
               src="/img/pictures.png"
               alt="pictures.png"
-              width={300}
-              height={200}
+              width={400}
+              height={300}
             />
           </div>
         </div>
