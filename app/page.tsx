@@ -131,7 +131,7 @@ export default function Home() {
                 découverte de soi.
               </p>
             </div>
-            <p>
+            <p className="text-right">
               Une nouvelle façon de découvrir le nouveau parfum de Lancôme,
               l’enivrant. Votre image mentale imprimée, saisissez l’occasion de
               partager votre imagination et vision à votre entourage !
