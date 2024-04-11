@@ -234,6 +234,11 @@ body {
 	text-align: right;
 }
 
+.text-right{
+	margin-left: 120px;
+	text-align: left;
+}
+
 /* Vidéo conteneur */
 .video-container {
 	position: relative;
