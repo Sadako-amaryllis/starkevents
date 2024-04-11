@@ -162,7 +162,7 @@ export default function Home() {
             />
           </div>
           <video controls autoPlay muted>
-            <source src="/video/goutte.mp4" type="video/mp4" />
+            <source src="/video/events.mp4" type="video/mp4" />
             Votre navigateur ne supporte pas la lecture de vidéos au format MP4.
           </video>
         </div>
